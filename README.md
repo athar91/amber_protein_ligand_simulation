@@ -1,6 +1,6 @@
 # Molecular Dynamics Simulation Tutorial
 
-This tutorial guides you through the process of setting up and running a molecular dynamics (MD) simulation for a protein-ligand complex using the AMBER molecular dynamics software suite.
+This tutorial guides you through the process of setting up and running a molecular dynamics (MD) simulation for a protein-ligand complex using the AMBER molecular dynamics software suite. This tutorial is a part of course of "Molecular Modeling of biological System" of Department of Physics, University of Cagliari.
 
 ## Introduction
 In this tutorial, we will simulate the prescription drug Sustiva (Efavirenz) in complex with HIV-1 REVERSE TRANSCRIPTASE. Efavirenz is a human immunodeficiency virus type 1 (HIV-1) specific, non-nucleoside, reverse transcriptase (RT) inhibitor marketed by Bristol Myers Squibb for controlling the progression of HIV infection in humans.
