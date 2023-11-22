@@ -11,6 +11,9 @@ The tutorial assumes the following test environment:
 ```bash
 mathar@freddie:~/cheetah/andrea_files/try/tutorial8 
 
+### Source the amber program
+
+
 ```
 ## Steps
 
@@ -20,13 +23,15 @@ Download a PDB structure file for your protein-ligand complex. In this tutorial,
 
 ## 2. Prepare Protein Structure
 Open the PDB structure in VMD and save only the protein coordinates using the following VMD selection:
+```bash
 (chain A and resid 1 to 243 or resname EFZ)
+```
 Save the protein structure as 1fko_trunc.pdb.
 
 ## 3. Clean and Prepare Ligand
 Clean the ligand structure using pdb4amber, grep, reduce, and antechamber. Run the following commands:
 
-pdb4amber
+pdb4amber is a tool that helps to preprocess PDB files for AMBER simulations.
 ```bash
 pdb4amber -i 1fko_trunc.pdb -o 1fko_trunc_clean.pdb --add-missing-atoms --no-reduce-db --most-populous
 ```
