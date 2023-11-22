@@ -2,7 +2,7 @@
 export CUDA_VISIBLE_DEVICES=0
 source /etc/modules.sh
 module load amber20
-EXE=$(which pmemd.cuda)
+EXE=$(which pmemd)
 DIR=.
 PARM=$DIR/1fko_trunc_clean.prmtop
 
