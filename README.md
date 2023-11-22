@@ -122,7 +122,7 @@ Equilibration2: Equilibrating the system at constant temperature and pressure (N
 Production Molecular Dynamics: System undergoes long molecular dynamics simulations in the NTP ensemble.
 
 
-### run the [run_md.sh] (run_md.sh)  
+### run the [run_md.sh](run_md.sh)  
 ```bash 
 nohup bash run_md.sh &
 ```
