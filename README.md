@@ -98,11 +98,23 @@ Simulation Stages
 The MD simulation will undergo the following stages:
 
 Energy Minimization1: The entire system undergoes minimization.
+
+
 Energy Minimization2: Restraint applied only to the protein backbone.
+
+
 Energy Minimization3: Restraint applied only to the alpha carbons (Cα) of the protein.
+
+
 Equilibration0: Without any restraints.
+
+
 Equilibration1: System is heated from 0K to 310K and undergoes molecular dynamics simulations.
+
+
 Equilibration2: Equilibrating the system at constant temperature and pressure (NTP ensemble).
+
+
 Production Molecular Dynamics: System undergoes long molecular dynamics simulations in the NTP ensemble.
 
 
