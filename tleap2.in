@@ -1,0 +1,12 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+loadamberparams EFZ_H.frcmod 
+loadoff ligand.lib 
+complex = loadpdb 1fko_trunc_clean.pdb 
+solvatebox complex TIP3PBOX 12
+addionsrand complex K+ 0
+addionsrand complex Cl- 0
+saveamberparm complex 1fko_trunc_clean.prmtop 1fko_trunc_clean.inpcrd
+savepdb complex 1fko_trunc_param.pdb 
+quit 

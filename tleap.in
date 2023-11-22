@@ -1,0 +1,9 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+EFZ = loadmol2 EFZ_H.mol2 
+check EFZ 
+loadamberparams EFZ_H.frcmod
+saveoff EFZ EFZ.lib 
+saveamberparm EFZ ligand.prmtop ligand.inpcrd
+quit 
