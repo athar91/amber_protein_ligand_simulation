@@ -122,9 +122,11 @@ Production Molecular Dynamics: System undergoes long molecular dynamics simulati
 
 ### run the [run_md.sh] (run_md.sh)  
 ```bash 
-run_md.sh
+nohup bash run_md.sh &
 ```
 
+# Reference
+This tutorial is adapted from https://ambermd.org/tutorials/basic/tutorial4b/
 
 
 
