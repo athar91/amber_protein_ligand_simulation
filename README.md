@@ -60,7 +60,7 @@ parmchk2 to test if all the parameters we require are available
 parmchk2 -i EFZ_H.mol2 -f mol2 -o EFZ_H.frcmod
 ```
 # 4. Create Leap Input Files
-Create two TLEAP input files (tleap.in and tleap2.in) with the provided content.
+tleap is a program that will generate the system from the command line based on an input file containing all the necessary information Create two TLEAP input files (tleap.in and tleap2.in) with the provided content.
 
 [tleap.in](tleap.in)
 ```bash
