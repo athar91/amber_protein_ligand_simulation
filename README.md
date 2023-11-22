@@ -53,6 +53,8 @@ reduce EFZ.pdb > EFZ_H.pdb
 ```bash
 antechamber -i EFZ_H.pdb -fi pdb -o EFZ_H.mol2 -fo mol2 -c bcc -s 2
 ```
+Alternatively, you can use Acpype server to generate the forcefield topology using https://www.bio2byte.be/acpype/
+
 parmchk2 to test if all the parameters we require are available
 ```bash
 parmchk2 -i EFZ_H.mol2 -f mol2 -o EFZ_H.frcmod
