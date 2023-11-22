@@ -5,7 +5,7 @@ This tutorial guides you through the process of setting up and running a molecul
 ## Introduction
 In this tutorial, we will simulate the prescription drug Sustiva (Efavirenz) in complex with HIV-1 REVERSE TRANSCRIPTASE. Efavirenz is a human immunodeficiency virus type 1 (HIV-1) specific, non-nucleoside, reverse transcriptase (RT) inhibitor marketed by Bristol Myers Squibb for controlling the progression of HIV infection in humans.
 The chemical name for Sustiva is  (S)-6-chloro-(cyclopropylethynyl)-1,4-dihydro-4-(trifluoromethyl)-2H-3,1-benzoxazin-2-one.
-Our Efavirenz bound RT pdb file is downloaded from (PDB ID [1FKO] (https://www.rcsb.org/structure/1FKO)). The coordinates of sustiva are associated with a residue called "EFZ" (Efavirenz).
+Our Efavirenz bound RT pdb file is downloaded from (PDB ID [1FKO](https://www.rcsb.org/structure/1FKO)). The coordinates of sustiva are associated with a residue called "EFZ" (Efavirenz).
 
 ## Test Environment
 The tutorial assumes the following test environment:
