@@ -58,7 +58,7 @@ parmchk2 -i EFZ_H.mol2 -f mol2 -o EFZ_H.frcmod
 # 4. Create Leap Input Files
 Create two TLEAP input files (tleap.in and tleap2.in) with the provided content.
 
-tleap.in
+[tleap.in](tleap.in)
 ```bash
 source leaprc.protein.ff19SB
 source leaprc.gaff2
@@ -70,7 +70,7 @@ saveoff EFZ EFZ.lib
 saveamberparm EFZ ligand.prmtop ligand.inpcrd
 quit
 ```
-tleap2.in
+[tleap2.in](tleap2.in)
 ```bash
 source leaprc.protein.ff19SB
 source leaprc.gaff2
