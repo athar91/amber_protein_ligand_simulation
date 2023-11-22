@@ -96,7 +96,7 @@ tleap -f tleap.in
 tleap -f tleap2.in
 ```
 ## 6. Prepare MD Run Scripts
-Create bash scripts [run_md.sh](run_md.sh) for running the MD simulation.
+Download all [pmemd_files](pmemd_files.zip) setup files and create bash scripts [run_md.sh](run_md.sh) for running the MD simulation.
 
 Simulation Stages
 The MD simulation will undergo the following stages:
