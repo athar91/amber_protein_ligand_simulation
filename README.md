@@ -43,15 +43,15 @@ grep EFZ 1fko_trunc_clean.pdb > EFZ.pdb
 ```
 
 
-reduce
+reduce is a tool for adding hydrogen atoms to a PDB file
 ```bash
 reduce EFZ.pdb > EFZ_H.pdb
 ```
- antechamber
+ antechamber: We shall use Antechamber to assign atom types to this molecule and also calculate a set of point charges. Antechamber is the most important program within the set of Antechamber tools. It can perform many file conversions and can also assign atomic charges and atom types. Depending on its inputs, antechamber executes the following programs (all provided with AmberTools): sqm, atomtype, am1bcc, bondtype, espgen, respgen and prepgen.
 ```bash
 antechamber -i EFZ_H.pdb -fi pdb -o EFZ_H.mol2 -fo mol2 -c bcc -s 2
 ```
-parmchk2
+parmchk2 to test if all the parameters we require are available
 ```bash
 parmchk2 -i EFZ_H.mol2 -f mol2 -o EFZ_H.frcmod
 ```
