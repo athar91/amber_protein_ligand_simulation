@@ -43,7 +43,7 @@ RESTART=rest_${NAME}.rst7
 COORD=${NAME}.nc 
 ENERGY=${NAME}.energy
 
-#$EXE -O -i $IN -o $OUT -p $PARM -c $INITCRD -r $RESTART -x $COORD -e $ENERGY -ref $REF
+$EXE -O -i $IN -o $OUT -p $PARM -c $INITCRD -r $RESTART -x $COORD -e $ENERGY -ref $REF
 
 ################
 #4
