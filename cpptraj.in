@@ -1,0 +1,40 @@
+# Load topology and trajectories to be merged
+parm 1fko_trunc_clean.prmtop
+
+# Reference structure
+reference 1fko_trunc_param.pdb
+
+# Load trajectory
+trajin md2.nc 1 10000 10
+
+# Center the trajectory
+center :1-243 mass origin
+
+# Image to coordinate origin using the residues' COMs
+autoimage origin anchor :1-243
+strip :WAT
+# Align frames
+#calculate rmsf :1-243
+strip !(:1-243@*)
+rms first
+average crdset MyAvg
+rms ref MyAvg
+atomicfluct :1-243@CA out rmsf_protein.dat byres
+# Output pdb file of the last frame
+#trajout md1_aligned.pdb pdb onlyframes 5 multi
+trajout md1_nowater.nc #netcdf onlyframes stride 5
+
+# Calculate RMSD and plot
+rms :1-243@CA reference out rmsd_protein_CA.dat
+rmsd :EFZ reference out rmsd_efz.dat
+run
+
+# Quit cpptraj
+clear all
+###i
+parm 1fko_trunc_clean.prmtop
+parmstrip :WAT
+parmwrite out 1fko_trunc_clean_nowat.prmtop
+run
+
+
