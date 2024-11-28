@@ -15,7 +15,8 @@ autoimage origin anchor :1-243
 strip :WAT
 # Align frames
 #calculate rmsf :1-243
-strip !(:1-243@*)
+#strip !(:1-243@*)
+strip :WAT
 rms first
 average crdset MyAvg
 rms ref MyAvg
@@ -34,6 +35,7 @@ clear all
 ###i
 parm 1fko_trunc_clean.prmtop
 parmstrip !(:1-243@*)
+parmstrip :WAT
 parmwrite out 1fko_trunc_clean_nowat.prmtop
 run
 
