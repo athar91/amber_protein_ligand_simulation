@@ -34,7 +34,7 @@ run
 clear all
 ###i
 parm 1fko_trunc_clean.prmtop
-parmstrip !(:1-243@*)
+#parmstrip !(:1-243@*)
 parmstrip :WAT
 parmwrite out 1fko_trunc_clean_nowat.prmtop
 run
