@@ -5,9 +5,9 @@ md NTP
    ntx=5,
    irest=1,
 ! nature and format of the output
-   ntpr=25000,
+   ntpr=5000,
    ntwr=25000,
-   ntwx=25000,
+   ntwx=5000,
    ntwe=25000,
    iwrap=1,
    ntxo=1,
@@ -17,7 +17,7 @@ md NTP
    ntb=2,
    cut=9.0,
 !molecular dynamics
-   nstlim=250000000,
+   nstlim=2500000, ! Number of time steps (2500000 for 5 ns at 2 fs)
    dt=0.002,
    ig=-1,
    nscm=1000,
