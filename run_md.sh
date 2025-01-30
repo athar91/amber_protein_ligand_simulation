@@ -61,7 +61,7 @@ $EXE -O -i $IN -o $OUT -p $PARM -c $INITCRD -r $RESTART -x $COORD -e $ENERGY
 ################
 #5
 NAME=anneal
-IN=setup_files/${NAME}.pmemd
+IN=${NAME}.pmemd
 OUT=${NAME}.out
 INITCRD=$RESTART
 REF=$INITCRD
