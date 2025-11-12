@@ -2,10 +2,14 @@
 
 This tutorial guides you for setting up and running a molecular dynamics (MD) simulation for a protein-ligand complex using the AMBER molecular dynamics software suite. This tutorial is a part of course of "Molecular Modeling of biological System" of Department of Physics, University of Cagliari.
 
+<img width="460" height="583" alt="amber" src="https://github.com/user-attachments/assets/71a15ed8-52ed-480b-9661-e9418cc11edb" />
+
 ## Introduction
 In this tutorial, we will simulate the prescription drug Sustiva (Efavirenz) in complex with HIV-1 REVERSE TRANSCRIPTASE. Efavirenz is a human immunodeficiency virus type 1 (HIV-1) specific, non-nucleoside, reverse transcriptase (RT) inhibitor marketed by Bristol Myers Squibb for controlling the progression of HIV infection in humans.
 The chemical name for Sustiva is  (S)-6-chloro-(cyclopropylethynyl)-1,4-dihydro-4-(trifluoromethyl)-2H-3,1-benzoxazin-2-one.
 The Efavirenz bound RT pdb file is downloaded from (PDB ID [1FKO](https://www.rcsb.org/structure/1FKO)). The coordinates of sustiva are associated with a residue called "EFZ" (Efavirenz).
+
+<img width="742" height="308" alt="drug" src="https://github.com/user-attachments/assets/d0022fbc-92a1-4ae5-8943-60b59b828918" />
 
 The files are also available at altair server of physics department (dsf.unica.it): @altair:/scratch/mathar/Tutorial8_amber_protein_ligand_simulation-main.zip
 
