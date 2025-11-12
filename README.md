@@ -136,6 +136,14 @@ Production Molecular Dynamics: System undergoes long molecular dynamics simulati
 ```bash 
 nohup bash run_md.sh &
 ```
+## 7. Analysis
+the trajectory is available at 
+```
+scp -r mathar@altair.dsf.unica.it:/scratch/mathar/{md1.nc,load_vmd.tcl,cpptraj_1.in} .
+
+```
+
+
 
 # Reference
 This tutorial is adapted from https://ambermd.org/tutorials/basic/tutorial4b/
