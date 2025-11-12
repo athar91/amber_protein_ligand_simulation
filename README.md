@@ -50,7 +50,10 @@ grep EFZ
 grep EFZ 1fko_trunc_clean.pdb > EFZ.pdb
 grep -v EFZ 1fko_trunc_clean.pdb > prot.pdb
 ```
-
+We will investigate the protonation states of the protein using the H++ web server (available at http://newbiophysics.cs.vt.edu/H++/).
+This server estimates pKₐ values of ionizable residues and assigns appropriate protonation states at a specified pH using continuum electrostatics.
+To use it, register on the server, upload the protein structure file (prot.pdb), and process it to generate a protonated model.
+The resulting structure, with optimized hydrogen placement and assigned charge states, can then be used for further molecular dynamics simulations.
 
 reduce is a tool for adding hydrogen atoms to a PDB file
 ```bash
