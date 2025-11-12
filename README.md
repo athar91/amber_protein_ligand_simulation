@@ -48,6 +48,7 @@ pdb4amber -i 1fko_trunc.pdb -o 1fko_trunc_clean.pdb --add-missing-atoms --no-red
 grep EFZ
 ```bash
 grep EFZ 1fko_trunc_clean.pdb > EFZ.pdb
+grep -v EFZ 1fko_trunc_clean.pdb > prot.pdb
 ```
 
 
