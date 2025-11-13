@@ -84,6 +84,41 @@ saveoff EFZ ligand.lib
 saveamberparm EFZ ligand.prmtop ligand.inpcrd
 quit
 ```
+Open ligand.prmtop and try to understand the parameters.
+%FLAG TITLE: Describes the system or molecule name (e.g., EFZ).
+
+%FLAG POINTERS: Contains numerical counts — total number of atoms, bonds, angles, dihedrals, atom types, residues, etc.
+These values tell Amber how to interpret the rest of the data.
+
+%FLAG ATOM_NAME: Lists the names of all atoms in the system (e.g., C1, O1, N1, H1…).
+
+%FLAG CHARGE: Contains the partial atomic charges (scaled by 18.2223).
+Divide each value by 18.2223 to get the charge in e (elementary charge units).
+
+%FLAG ATOMIC_NUMBER: Gives the atomic number of each atom (e.g., 6 for carbon, 8 for oxygen, 1 for hydrogen).
+
+%FLAG MASS: Lists the atomic masses used for each atom (in atomic mass units).
+
+%FLAG BONDS_WITHOUT_HYDROGEN: Defines all covalent bonds not involving hydrogen atoms.Each bond entry contains atom indices and a bond type, which links to the bond parameters.
+%FLAG BONDS_INC_HYDROGEN: Defines all bonds that include hydrogen atoms.
+%FLAG BOND_FORCE_CONSTANT: Stores the bond stretching force constants (k) in kcal/mol·Å².
+%FLAG BOND_EQUIL_VALUE: Contains the equilibrium bond lengths (r₀) in Ångström.
+%FLAG ANGLES_WITHOUT_HYDROGEN: Lists all angles between three bonded atoms that do not include hydrogen.
+%FLAG ANGLES_INC_HYDROGEN: Lists all angles that include hydrogen atoms.
+%FLAG ANGLE_FORCE_CONSTANT: Angle bending force constants (kθ) in kcal/mol·rad².
+%FLAG ANGLE_EQUIL_VALUE: Equilibrium bond angles (θ₀) in degrees.
+%FLAG DIHEDRALS_WITHOUT_HYDROGEN: Defines torsional angles (four connected atoms) without hydrogen.
+%FLAG DIHEDRALS_INC_HYDROGEN: Defines torsional angles that include hydrogen atoms.
+%FLAG DIHEDRAL_FORCE_CONSTANT: Contains torsional barrier heights (Vn/2) in kcal/mol.
+%FLAG DIHEDRAL_PERIODICITY: Lists periodicity (n) for each dihedral — the number of minima per 360° rotation.
+%FLAG DIHEDRAL_PHASE: Contains phase offsets (γ) in degrees for each torsion.
+%FLAG NONBONDED_PARM_INDEX: Defines which pair of atom types use which nonbonded parameter set.
+%FLAG LENNARD_JONES_ACOEF: Lennard–Jones A coefficients used in the 12-6 potential term 
+%FLAG LENNARD_JONES_BCOEF: Lennard–Jones B coefficients used in the 12-6 potential term 
+%FLAG RESIDUE_LABEL: Lists residue names (e.g., LIG, ALA, H2O).
+%FLAG RESIDUE_POINTER: Indicates the starting atom index for each residue.
+%FLAG BOX_DIMENSIONS: (Only present for solvated systems) — gives the box lengths (a, b, c) and angles (α, β, γ) for periodic boundary conditions.
+
 [tleap2.in](tleap2.in)
 ```bash
 source leaprc.protein.ff19SB
