@@ -177,12 +177,14 @@ lsort -unique [$sel get {resid}]
 lsort -unique [$sel get {resname resid}]
 ```
 
-
+The list of residues are :
 100 101 102 103 106 179 181 183 188 189 190 227 229 234 235 236 244 95
 
 
-
-
+You can list residues which have higher fluctuations than 2 ang in the rmsf_protein.dat file
+```
+awk '!/^#/ && $2 > 2 {printf "%d ", $1}' rmsf_protein.dat; echo
+```
 
 
 # Reference
