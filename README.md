@@ -218,6 +218,8 @@ EFZ forms stable hydrogen bonds primarily with LYS_101, acting both as donor (~7
 awk 'NR>1 && $5>=0.1 {print $2,$1,$5}' hb_res_avg_acceptor_donor.dat | sort -k3 -nr
 awk 'NR>1 && $5>=0.1 {print $2,$1,$5}' hb_res_avg_donor_acceptor.dat | sort -k3 -nr
 ```
+<img width="300" height="200" alt="efz_D_A" src="https://github.com/user-attachments/assets/c983bc10-e378-402a-ae42-84d7b10e60d7" />
+
 # Reference
 This tutorial is adapted from https://ambermd.org/tutorials/basic/tutorial4b/
 
