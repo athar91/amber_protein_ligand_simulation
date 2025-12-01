@@ -207,7 +207,7 @@ Check the files produced
 ```
 python plot_hbond.in
 ```
-<img width="1500" height="1200" alt="hbonds_EFZ" src="https://github.com/user-attachments/assets/9079680c-308a-4ece-a68a-428855d17537" />
+<img width="750" height="600" alt="hbonds_EFZ" src="https://github.com/user-attachments/assets/9079680c-308a-4ece-a68a-428855d17537" />
 
 # Reference
 This tutorial is adapted from https://ambermd.org/tutorials/basic/tutorial4b/
