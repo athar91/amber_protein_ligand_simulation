@@ -26,7 +26,9 @@ trajout md1_nowater.pdb pdb onlyframes 1
 trajout md1_nowater.nc #netcdf onlyframes stride 5
 
 # Calculate RMSD and plot
+rms :1-243@* reference out rmsd_protein.dat
 rms :1-243@CA reference out rmsd_protein_CA.dat
+
 rmsd :EFZ reference out rmsd_efz.dat
 run
 
