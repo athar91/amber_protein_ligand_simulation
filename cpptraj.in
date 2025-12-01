@@ -5,7 +5,7 @@ parm 1fko_trunc_clean.prmtop
 reference 1fko_trunc_param.pdb
 
 # Load trajectory
-trajin md2.nc 1 10000 1
+trajin md1.nc 1 10000 1
 
 # Center the trajectory
 center :1-243 mass origin
