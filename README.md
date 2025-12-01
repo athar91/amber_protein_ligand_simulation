@@ -188,6 +188,8 @@ Plot the rmsf and rmsd of the protein-ligand complex
 python plot_rmsf.py
 python plot_rmsd.py
 ```
+<img width="300" height="200" alt="rmsd_time_distribution_plot" src="https://github.com/user-attachments/assets/c60e706c-af40-4f3a-8055-f858ea571614" />
+<img width="300" height="200" alt="rmsf_plot" src="https://github.com/user-attachments/assets/74497284-a7c8-4c8e-9842-41b4d74a1db0" />
 
 You can list residues that have higher fluctuations than 2 ang in the rmsf_protein.dat file
 ```
