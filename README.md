@@ -211,6 +211,13 @@ python plot_hbond.in
 ```
 <img width="200" height="200" alt="hbonds_EFZ" src="https://github.com/user-attachments/assets/9079680c-308a-4ece-a68a-428855d17537" />
 
+
+EFZ forms stable hydrogen bonds primarily with LYS_101, acting both as donor (~76%) and acceptor (~15%), indicating strong electrostatic complementarity. High occupancy with lysine suggests this residue is a key anchor point stabilizing EFZ in the binding site.
+
+```
+awk 'NR>1 && $5>=0.1 {print $2,$1,$5}' hb_res_avg_acceptor_donor.dat | sort -k3 -nr
+awk 'NR>1 && $5>=0.1 {print $2,$1,$5}' hb_res_avg_donor_acceptor.dat | sort -k3 -nr
+```
 # Reference
 This tutorial is adapted from https://ambermd.org/tutorials/basic/tutorial4b/
 
