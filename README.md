@@ -198,7 +198,15 @@ Lets map  these residues on the structures
 ```
 vmd -e vis.vmd
 ```
-
+## H-bond analysis
+Lets map  these residues on the structures
+```
+cpptraj -i hbond.in
+```
+Check the files produced 
+```
+python plot_hbond.in
+```
 
 # Reference
 This tutorial is adapted from https://ambermd.org/tutorials/basic/tutorial4b/
