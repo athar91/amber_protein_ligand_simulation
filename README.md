@@ -157,12 +157,31 @@ Production Molecular Dynamics: System undergoes long molecular dynamics simulati
 ```bash 
 nohup bash run_md.sh &
 ```
-## 7. Analysis
+## 7. FILES
 the trajectory is available at 
 ```
 scp -r mathar@altair.dsf.unica.it:/scratch/mathar/{md1.nc,load_vmd.tcl,cpptraj_1.in} .
 
 ```
+
+
+## Post-processing
+xx 
+```
+
+```
+```
+set sel1 [atomselect top "within 4 of resname EFZ"]
+set sel1 [atomselect top "within 4 of resname EFZ"]
+lsort -unique [$sel get {resid}]
+lsort -unique [$sel get {resname resid}]
+```
+
+
+100 101 102 103 106 179 181 183 188 189 190 227 229 234 235 236 244 95
+
+
+
 
 
 
