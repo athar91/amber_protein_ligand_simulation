@@ -22,7 +22,7 @@ average crdset MyAvg
 rms ref MyAvg
 atomicfluct :1-243@CA out rmsf_protein.dat byres
 # Output pdb file of the last frame
-#trajout md1_aligned.pdb pdb onlyframes 5 multi
+trajout md1_nowater.pdb pdb onlyframes 1
 trajout md1_nowater.nc #netcdf onlyframes stride 5
 
 # Calculate RMSD and plot
