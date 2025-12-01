@@ -1,0 +1,38 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# ---------------------------
+# Load data
+# ---------------------------
+hb_acceptor = np.loadtxt("hb_res_acceptor_donor.dat", comments="#")
+hb_donor = np.loadtxt("hb_res_donor_acceptor.dat", comments="#")
+
+# Extract frames and H-bonds
+frame1, hb1 = hb_acceptor[:, 0], hb_acceptor[:, 1]
+frame2, hb2 = hb_donor[:, 0], hb_donor[:, 1]
+
+# Convert frames to time (ns)
+time1 = frame1 * 0.01  # 0.01 ns per frame
+time2 = frame2 * 0.01
+
+# ---------------------------
+# Plotting
+# ---------------------------
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
+
+# Subplot 1: EFZ as acceptor
+ax1.plot(time1, hb1, color="blue", linewidth=1)
+ax1.set_ylabel("H-bonds (EFZ acceptor)")
+ax1.set_title("H-bonds: EFZ as Acceptor")
+ax1.grid(True, linestyle="--", alpha=0.4)
+
+# Subplot 2: EFZ as donor
+ax2.plot(time2, hb2, color="orange", linewidth=1)
+ax2.set_xlabel("Time (ns)")
+ax2.set_ylabel("H-bonds (EFZ donor)")
+ax2.set_title("H-bonds: EFZ as Donor")
+ax2.grid(True, linestyle="--", alpha=0.4)
+
+plt.tight_layout()
+plt.savefig("hbonds_EFZ.png", dpi=300)
+plt.show()

@@ -1,0 +1,21 @@
+# Load topology
+parm md1_nowater.pdb
+
+# Load trajectory
+trajin md1_nowater.nc
+
+# Loop over protein residues 1–243 and compute H-bonds with ligand EFZ
+# Outputs: per-residue H-bonds and average occupancy
+
+# Define output files
+# We will use the residue number in the filename dynamically using bash later
+# But in cpptraj we can list multiple hbond commands
+
+# Example for residue 1 (repeat / script for all residues):
+#hbond HBEFZ_1 donormask :EFZ acceptormask :1 out hb_res1.dat avgout hb_res1_avg.dat
+#hbond HBEFZ_2 donormask :EFZ acceptormask :2 out hb_res2.dat avgout hb_res2_avg.dat
+# ...
+hbond HB_EFZ donormask :EFZ acceptormask :1-243 out hb_res_acceptor_donor.dat avgout hb_res_avg_acceptor_donor.dat
+hbond HB_EFZ1 donormask :1-243 acceptormask :EFZ out hb_res_donor_acceptor.dat avgout hb_res_avg_donor_acceptor.dat
+# Run all actions
+run
