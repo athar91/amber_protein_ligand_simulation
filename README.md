@@ -112,9 +112,9 @@ Open `ligand.prmtop` in a text editor. This topology file describes the atoms an
 
 Consider a bond as a spring connecting two atoms. Its stretching energy in AMBER is:
 
-$
+$$
 E_{\text{bond}} = K_b(r-r_0)^2
-$
+$$
 
 Here:
 
@@ -126,15 +126,15 @@ You may recognize Hooke’s law written as $E=\tfrac12 k(r-r_0)^2$. AMBER incorp
 
 For an illustrative bond with $K_b=300\ \text{kcal mol}^{-1}\text{Å}^{-2}$ and $r_0=1.50\ \text{Å}$, stretching it to $1.60\ \text{Å}$ gives:
 
-$
+$$
 E_{\text{bond}}=300(1.60-1.50)^2=3.0\ \text{kcal/mol}
-$
+$$
 
 The restoring force is:
 
-$
+$$
 F_r=-\frac{dE}{dr}=-2K_b(r-r_0)
-$
+$$
 
 The negative sign means the force opposes stretching. At $r=r_0$, this bond’s restoring force is zero; other interactions may still exert forces on the atoms.
 
