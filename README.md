@@ -23,6 +23,17 @@ mathar@freddie:~/cheetah/andrea_files/try/tutorial8
 
 
 ```
+## Before you start
+
+This tutorial uses a Linux terminal and Bash commands. Prepare the following software before beginning:
+
+- **AMBER/AmberTools:** `pdb4amber`, `reduce`, `antechamber`, `parmchk2`, and `tleap` for system preparation; `cpptraj` for trajectory analysis.
+- **An AMBER installation providing `pmemd`:** required by the supplied `run_md.sh` simulation script.
+- **VMD:** for selecting atoms and visualizing structures and trajectories.
+- **Python 3 with NumPy, Matplotlib, and SciPy:** for running the plotting scripts.
+
+Run commands from the same working folder unless instructed otherwise. The supplied run script loads the `amber20` module using a setup specific to the course server; other systems require the appropriate local AMBER setup.
+
 ## Steps
 
 ## 1. Download PDB Structure
