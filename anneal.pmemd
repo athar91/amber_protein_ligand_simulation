@@ -38,7 +38,9 @@ a
 !   restraint_wt = 1.0,
 !   restraintmask = "(!(:1251-1259,1267-1268,1270-1271,1274-1274,1292-1296,1388-1397,1401-1408,1440-1444,1446-1449,1451-1451,1460-1460,1484-1493,1496-1496,1501-1507,1542-1544) & @CA) | (:MBX & !@H=)"
  /
- &wt type='TEMP0', istep1=0, istep2=480000, value1=0.0, value2=310.0
+ &wt type='TEMP0', istep1=0, istep2=40000, value1=0.0, value2=310.0
+ /
+ &wt type='TEMP0', istep1=40001, istep2=50000, value1=310.0, value2=310.0
  /
  &wt type='TAUTP', istep1=0, istep2=480000, value1=0.2, value2=0.2
  /
