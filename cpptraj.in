@@ -42,3 +42,5 @@ parm 1fko_trunc_clean.prmtop
 parmstrip :WAT
 parmwrite out 1fko_trunc_clean_nowat.prmtop
 run
+
+
