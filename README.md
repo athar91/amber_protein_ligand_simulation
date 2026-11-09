@@ -172,9 +172,8 @@ xx
 ```
 ```
 set sel1 [atomselect top "within 4 of resname EFZ"]
-set sel1 [atomselect top "within 4 of resname EFZ"]
-lsort -unique [$sel get {resid}]
-lsort -unique [$sel get {resname resid}]
+lsort -unique [$sel1 get {resid}]
+lsort -unique [$sel1 get {resname resid}]
 ```
 
 The list of residues are :
