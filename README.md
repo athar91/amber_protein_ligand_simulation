@@ -34,6 +34,19 @@ This tutorial uses a Linux terminal and Bash commands. Prepare the following sof
 
 Run commands from the same working folder unless instructed otherwise. The supplied run script loads the `amber20` module using a setup specific to the course server; other systems require the appropriate local AMBER setup.
 
+## Get the tutorial files
+
+Download and extract this repository using **Code → Download ZIP**, then open a terminal in the extracted folder.
+
+Alternatively, if Git is installed:
+
+```bash
+git clone https://github.com/athar91/amber_protein_ligand_simulation.git
+cd amber_protein_ligand_simulation
+```
+
+This folder is your working directory. Keep the supplied scripts and the files you generate here.
+
 ## Steps
 
 ## 1. Download PDB Structure
