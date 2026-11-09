@@ -28,7 +28,7 @@ a
 !temperature regulation
    ntt=3,
    gamma_ln=1.0,
-   temp0=300.0,
+   temp0=310.0,
 !shake bonds?
    ntc=2,
  /
