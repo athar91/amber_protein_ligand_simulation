@@ -20,17 +20,17 @@ time2 = frame2 * 0.01
 # ---------------------------
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
 
-# Subplot 1: EFZ as acceptor
+# Subplot 1: EFZ as donor
 ax1.plot(time1, hb1, color="blue", linewidth=1)
-ax1.set_ylabel("H-bonds (EFZ acceptor)")
-ax1.set_title("H-bonds: EFZ as Acceptor")
+ax1.set_ylabel("H-bonds (EFZ donor)")
+ax1.set_title("H-bonds: EFZ as Donor")
 ax1.grid(True, linestyle="--", alpha=0.4)
 
-# Subplot 2: EFZ as donor
+# Subplot 2: EFZ as acceptor
 ax2.plot(time2, hb2, color="orange", linewidth=1)
 ax2.set_xlabel("Time (ns)")
-ax2.set_ylabel("H-bonds (EFZ donor)")
-ax2.set_title("H-bonds: EFZ as Donor")
+ax2.set_ylabel("H-bonds (EFZ acceptor)")
+ax2.set_title("H-bonds: EFZ as Acceptor")
 ax2.grid(True, linestyle="--", alpha=0.4)
 
 plt.tight_layout()
