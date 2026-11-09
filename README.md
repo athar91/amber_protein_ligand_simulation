@@ -153,29 +153,15 @@ tleap -f tleap2.in
 ## 6. Prepare MD Run Scripts
 Download all [pmemd_files](pmemd_files.zip) setup files and create bash scripts [run_md.sh](run_md.sh) for running the MD simulation.
 
-Simulation Stages
-The MD simulation will undergo the following stages:
+### Simulation stages
 
-Energy Minimization1: The entire system undergoes minimization.
-
-
-Energy Minimization2: Restraint applied only to the protein backbone.
-
-
-Energy Minimization3: Restraint applied only to the alpha carbons (Cα) of the protein.
-
-
-Equilibration0: Without any restraints.
-
-
-Equilibration1: System is heated from 0K to 310K and undergoes molecular dynamics simulations.
-
-
-Equilibration2: Equilibrating the system at constant temperature and pressure (NPT ensemble).
-
-
-Production Molecular Dynamics: System undergoes long molecular dynamics simulations in the NPT ensemble.
-
+1. **Minimize with solute heavy atoms restrained:** `opt_restr_all.pmemd`
+2. **Minimize with protein backbone restrained:** `opt_restr_backbone.pmemd`
+3. **Minimize with protein Cα atoms restrained:** `opt_restr_CAs.pmemd`
+4. **Minimize without restraints:** `opt.pmemd`
+5. **Heat for 100 ps:** increase the target temperature from 0 to 310 K over 80 ps, then hold for 20 ps — `anneal.pmemd`
+6. **Equilibrate for 100 ps at 310 K and 1 atm:** `equilibrate_NTP.pmemd`
+7. **Run production MD for 5 ns at 310 K and 1 atm:** `md1.pmemd`
 
 ### run the [run_md.sh](run_md.sh)  
 ```bash 
