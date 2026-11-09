@@ -108,7 +108,50 @@ saveoff EFZ ligand.lib
 saveamberparm EFZ ligand.prmtop ligand.inpcrd
 quit
 ```
-Open ligand.prmtop and try to understand the parameters.
+Open `ligand.prmtop` in a text editor. This topology file describes the atoms and the force-field parameters used to calculate the system’s energy and forces.
+
+Consider a bond as a spring connecting two atoms. Its stretching energy in AMBER is:
+
+$
+E_{\text{bond}} = K_b(r-r_0)^2
+$
+
+Here:
+
+- **$r$** is the current distance between the atoms.
+- **$r_0$** is the equilibrium bond length—the distance at which this bond-stretching term has its minimum energy.
+- **$K_b$** is the bond force constant. A larger value means a stiffer bond: stretching or compressing it costs more energy.
+
+You may recognize Hooke’s law written as $E=\tfrac12 k(r-r_0)^2$. AMBER incorporates the factor of $\tfrac12$ into its parameter, so **$k=2K_b$**.
+
+For an illustrative bond with $K_b=300\ \text{kcal mol}^{-1}\text{Å}^{-2}$ and $r_0=1.50\ \text{Å}$, stretching it to $1.60\ \text{Å}$ gives:
+
+$
+E_{\text{bond}}=300(1.60-1.50)^2=3.0\ \text{kcal/mol}
+$
+
+The restoring force is:
+
+$
+F_r=-\frac{dE}{dr}=-2K_b(r-r_0)
+$
+
+The negative sign means the force opposes stretching. At $r=r_0$, this bond’s restoring force is zero; other interactions may still exert forces on the atoms.
+
+**Mass** determines how an atom accelerates under a force through $F=ma$. For the same force, a heavier atom accelerates less. Mass does not set the equilibrium bond length.
+
+Find these sections in `ligand.prmtop`:
+
+| Section | Meaning | Units |
+|---|---|---|
+| `%FLAG MASS` | Mass of each atom | Atomic mass units |
+| `%FLAG BOND_FORCE_CONSTANT` | Bond stiffness, $K_b$ | kcal/mol/Å² |
+| `%FLAG BOND_EQUIL_VALUE` | Equilibrium bond length, $r_0$ | Å |
+
+The mass entries follow atom order. Bond constants and equilibrium lengths follow **bond parameter-type order**, rather than atom order.
+
+**Exercise:** Choose a corresponding force constant and equilibrium length from the file. Calculate the stretching energy for displacements of 0.05 Å and 0.10 Å. What happens to the energy when the displacement doubles?
+
 ```Parameter Flag,Description,Units
 TITLE,"System or molecule name (e.g., EFZ).",N/A
 POINTERS,"Numerical counts (atoms, bonds, angles, etc.).",N/A
