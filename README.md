@@ -152,24 +152,26 @@ The mass entries follow atom order. Bond constants and equilibrium lengths follo
 
 **Exercise:** Choose a corresponding force constant and equilibrium length from the file. Calculate the stretching energy for displacements of 0.05 Å and 0.10 Å. What happens to the energy when the displacement doubles?
 
-```Parameter Flag,Description,Units
-TITLE,"System or molecule name (e.g., EFZ).",N/A
-POINTERS,"Numerical counts (atoms, bonds, angles, etc.).",N/A
-ATOM_NAME,"List of all atom names (e.g., C1, H1).",N/A
-CHARGE,Partial atomic charges (Scaled: Divide by 18.2223 for charge in e).,e (scaled)
-ATOMIC_NUMBER,"Atomic number (e.g., 6 for Carbon).",N/A
-MASS,Atomic mass.,amu
-Bonds/Angles/Dihedrals,Atom indices defining molecular connectivity.,N/A
-BOND_FORCE_CONSTANT,Bond stretching force constant (k).,kcal/mol·Å²
-BOND_EQUIL_VALUE,Equilibrium bond length (r0​).,Å
-ANGLE_FORCE_CONSTANT,Angle bending force constant (kθ​).,kcal/mol·rad²
-ANGLE_EQUIL_VALUE,Equilibrium bond angle (θ0​).,degrees
-DIHEDRAL_FORCE_CONSTANT,Torsional barrier height (Vn​/2).,kcal/mol
-DIHEDRAL_PERIODICITY,Torsion periodicity (n).,N/A
-LENNARD_JONES_ACOEF / BCOEF,Nonbonded parameters for the 12-6 potential.,N/A
-RESIDUE_LABEL,"Residue names (e.g., LIG, ALA).",N/A
-BOX_DIMENSIONS,Box lengths and angles (for solvated systems).,"Å, degrees"
-```
+
+| Parameter flag | Description | Units |
+|---|---|---|
+| `TITLE` | System or molecule name (e.g., EFZ). | N/A |
+| `POINTERS` | Numerical counts (atoms, bonds, angles, etc.). | N/A |
+| `ATOM_NAME` | List of all atom names (e.g., C1, H1). | N/A |
+| `CHARGE` | Partial atomic charges (Scaled: Divide by 18.2223 for charge in e). | e (scaled) |
+| `ATOMIC_NUMBER` | Atomic number (e.g., 6 for Carbon). | N/A |
+| `MASS` | Atomic mass. | amu |
+| `Bonds/Angles/Dihedrals` | Atom indices defining molecular connectivity. | N/A |
+| `BOND_FORCE_CONSTANT` | Bond stretching force constant (k). | kcal/mol·Å² |
+| `BOND_EQUIL_VALUE` | Equilibrium bond length (r0​). | Å |
+| `ANGLE_FORCE_CONSTANT` | Angle bending force constant (kθ​). | kcal/mol·rad² |
+| `ANGLE_EQUIL_VALUE` | Equilibrium bond angle (θ0​). | degrees |
+| `DIHEDRAL_FORCE_CONSTANT` | Torsional barrier height (Vn​/2). | kcal/mol |
+| `DIHEDRAL_PERIODICITY` | Torsion periodicity (n). | N/A |
+| `LENNARD_JONES_ACOEF / BCOEF` | Nonbonded parameters for the 12-6 potential. | N/A |
+| `RESIDUE_LABEL` | Residue names (e.g., LIG, ALA). | N/A |
+| `BOX_DIMENSIONS` | Box lengths and angles (for solvated systems). | Å, degrees |
+
 
 
 [tleap2.in](tleap2.in)
