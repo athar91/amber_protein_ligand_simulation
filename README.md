@@ -147,10 +147,10 @@ Equilibration0: Without any restraints.
 Equilibration1: System is heated from 0K to 310K and undergoes molecular dynamics simulations.
 
 
-Equilibration2: Equilibrating the system at constant temperature and pressure (NTP ensemble).
+Equilibration2: Equilibrating the system at constant temperature and pressure (NPT ensemble).
 
 
-Production Molecular Dynamics: System undergoes long molecular dynamics simulations in the NTP ensemble.
+Production Molecular Dynamics: System undergoes long molecular dynamics simulations in the NPT ensemble.
 
 
 ### run the [run_md.sh](run_md.sh)  
