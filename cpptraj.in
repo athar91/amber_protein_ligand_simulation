@@ -29,7 +29,9 @@ trajout md1_nowater.nc #netcdf onlyframes stride 5
 rms :1-243@* reference out rmsd_protein.dat
 rms :1-243@CA reference out rmsd_protein_CA.dat
 
-rmsd :EFZ reference out rmsd_efz.dat
+# Align the protein, then measure ligand movement relative to it
+rms :1-243@CA reference
+rmsd :EFZ reference nofit out rmsd_efz.dat
 run
 
 # Quit cpptraj
@@ -40,5 +42,3 @@ parm 1fko_trunc_clean.prmtop
 parmstrip :WAT
 parmwrite out 1fko_trunc_clean_nowat.prmtop
 run
-
-
