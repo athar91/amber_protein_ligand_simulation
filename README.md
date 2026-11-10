@@ -234,15 +234,17 @@ scp -r mathar@altair.dsf.unica.it:/scratch/mathar/{md1.nc,load_vmd.tcl} .
 
 ## Post-processing
 
-```
-cpptraj -i cpptraj.in
 
-```
 We can check the residue around the binding sites using below tcl commands (in VMD)
 ```
 set sel1 [atomselect top "within 4 of resname EFZ"]
 lsort -unique [$sel1 get {resid}]
 lsort -unique [$sel1 get {resname resid}]
+```
+
+```
+cpptraj -i cpptraj.in
+
 ```
 
 The list of residues are :
