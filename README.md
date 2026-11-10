@@ -38,9 +38,11 @@ Run commands from the same working folder unless instructed otherwise. The suppl
 
 Download and extract this repository using **Code → Download ZIP**, then open a terminal in the extracted folder.
 
+```
 unzip amber_protein_ligand_simulation-main.zip
 cd amber_protein_ligand_simulation-main
 unzip str_files.zip
+```
 
 Alternatively, if Git is installed:
 
