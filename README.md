@@ -38,6 +38,8 @@ Run commands from the same working folder unless instructed otherwise. The suppl
 
 Download and extract this repository using **Code → Download ZIP**, then open a terminal in the extracted folder.
 
+unzip 
+
 Alternatively, if Git is installed:
 
 ```bash
@@ -50,7 +52,8 @@ This folder is your working directory. Keep the supplied scripts and the files y
 ## Steps
 
 ## 1. Download PDB Structure
-Download a PDB structure file for your protein-ligand complex. In this tutorial, we'll use the example structure `1fko.pdb`.
+Download a PDB structure file for your protein-ligand complex. 
+For this tutorial, we'll use the example structure `1FKO.pdb`.
 
 
 ## 2. Prepare Protein Structure
