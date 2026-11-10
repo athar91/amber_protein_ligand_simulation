@@ -234,18 +234,20 @@ scp -r mathar@altair.dsf.unica.it:/scratch/mathar/{md1.nc,load_vmd.tcl} .
 
 ## Post-processing
 
+We can align and calculate the rmsf and rmsd of the protein and ligand.
+```
+cpptraj -i cpptraj.in
 
-We can check the residue around the binding sites using below tcl commands (in VMD)
+```
+
+
+then the defnition of residue around the binding sites using below tcl commands (in VMD)
 ```
 set sel1 [atomselect top "within 4 of resname EFZ"]
 lsort -unique [$sel1 get {resid}]
 lsort -unique [$sel1 get {resname resid}]
 ```
 
-```
-cpptraj -i cpptraj.in
-
-```
 
 The list of residues are :
 100 101 102 103 106 179 181 183 188 189 190 227 229 234 235 236 244 95
