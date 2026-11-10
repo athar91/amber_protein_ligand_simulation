@@ -236,7 +236,7 @@ scp -r mathar@altair.dsf.unica.it:/scratch/mathar/{md1.nc,load_vmd.tcl} .
 
 ```
 cpptraj -i cpptraj.in
-cpptraj -i hbond.in
+
 ```
 ```
 set sel1 [atomselect top "within 4 of resname EFZ"]
