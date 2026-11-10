@@ -57,7 +57,12 @@ This folder is your working directory. Keep the supplied scripts and the files y
 
 ## 1. Download PDB Structure
 Download a PDB structure file for your protein-ligand complex. 
+
 For this tutorial, we'll use the example structure `1FKO.pdb`.
+
+```
+vmd 1FKO.pdb
+```
 
 
 ## 2. Prepare Protein Structure
